@@ -29,7 +29,7 @@ h6 {
   font-family:  Montserrat, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: Cinzel, serif;
+  font-family: Tinos, serif;
 
 }
 h3 {
@@ -69,7 +69,22 @@ li {
   padding: 88px;
   margin: -141px 220px 100px;
 }
+#close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 15px;
+  color: darkred;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  /* border: 1px solid darkgray; */
+  transition: 0.2s;
+  cursor: pointer;
+}
 
+#close-modal:hover {
+  background-color: lightgray;
+}
 #announcement {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
@@ -324,6 +339,9 @@ hr {
   z-index:120;
 }
 
+.video-section {
+  padding-bottom: 110px;
+}
 
 .section-heading h2 {
 	font-size: 40px;
@@ -362,20 +380,49 @@ hr {
 ============================ */
 
 .intro {
-	width:100%;
-	position:relative;
+	width: 100%;
+	position: relative;
 	/*background: url(../img/RabbiSoloveitchik.jpg) no-repeat top center;*/
   background: url(../img/RavCompositeWeb.jpg) no-repeat top center;
 }
 
+#video-page-intro {
+  /* padding: 70px 0 0; */
+  overflow: hidden;
+  margin-top: 90px;
+  width: 100%;
+  position: relative;
+  height: 120px;
+  font-size: 2em; 
+}
+#video-page-intro #background-rav-image {
+  /* position: absolute; */
+  /* height: 95%;
+  background: url(../img/RabbiSoloveitchik.jpg) no-repeat center;
+  background-size: contain; */
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  padding-bottom: 1em;
+  /* width: 60%; */
+}
+
+#video-page-intro .title-content {
+  padding: 12px;
+  background-color: rgba(0, 0, 0, .6);
+  /* color: #fff; */
+  /* color: #efefef; */
+}
+
 #intro.intro {
-	padding:20% 0 0 0;
+	padding: 20% 0 0 0;
   overflow: hidden;
 }
 
 .intro .slogan {
 	text-align: center;
-
 }
 
 .intro .page-scroll {
@@ -411,6 +458,14 @@ hr {
 	text-shadow: -1px 1px 1px #000;
 }
 
+.video-heading {
+  padding: 2em;
+  background-color: #67b0d1;
+  color: #fff;
+}
+.location {
+  font-size: 18px;
+}
 
 /* ===========================
 --- About
@@ -490,7 +545,10 @@ hr {
 	margin-bottom: 20px;
 }
 
-
+.video-caption {
+  font-size: 1.5em;
+  margin: 1em;
+}
 
 /* ===========================
 --- Contact
